@@ -27,3 +27,9 @@ CMD ["/bin/error.sh"]
 CMD ["/bin/ok.sh"]
 ```
 
+# Then
+
+```sh
+docker compose up --build --abort-on-container-exit --exit-code-from shit
+echo $?
+```
